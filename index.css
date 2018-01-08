@@ -5,12 +5,28 @@ body {
 
 /* CLASSES */
 .shoptile {
+  background-image: url("./assets/cafe.jpg") ;
+  height: 300px;
+  margin-bottom: 30px;
   text-align: center;
   border-style: solid;
   border-width: 5px;
 }
 
-/* ID'S */
-#logo {
+.readmore {
   text-align: center;
+  width: 200px;
+  display: block;
+  margin-left: 45%;
+  margin-bottom: 50px;
+}
+
+/* ID'S */
+#logo-box {
+  text-align: center;
+  margin: 100px;
+}
+
+#logo {
+  height: 300px
 }

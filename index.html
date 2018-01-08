@@ -4,44 +4,56 @@
     <link rel='stylesheet' type='text/css' href='./index.css'/>
   </head>
   <body>
-    <div id='logo'>
-      <h1>JERSEY CAFE</h1>
+    <div id='logo-box'>
+      <img id='logo' src="./assets/logo.png" />
     </div>
-    <div class='shoptile'>
+    <div id='track5-shoptile' class='shoptile'>
       <h3>Track 5</h3>
       <p>
         Track 5 is my favorite coffee shop in New Jersey
       </p>
     </div>
+      <button class ='readmore'id='read-more-track5'>read more</button>
     <div class='shoptile'>
       <h3>Van Goghs Ear</h3>
       <p>
         Track 5 is my favorite coffee shop in New Jersey
       </p>
+      <button value=>read more</button>
     </div>
     <div class='shoptile'>
       <h3>Cai's Cafe</h3>
       <p>
         Track 5 is my favorite coffee shop in New Jersey
       </p>
+      <button value=>read more</button>
     </div>
-    <div class='shoptile'>
-      <h3>The Coffee Box</h3>
-      <p>
-        Track 5 is my favorite coffee shop in New Jersey
-      </p>
-    </div>
-    <div class='shoptile'>
-      <h3>LIKIWANNA Coffee</h3>
-      <p>
-        Track 5 is my favorite coffee shop in New Jersey
-      </p>
-    </div>
-    <div class='shoptile'>
-      <h3>Cai's Cafe</h3>
-      <p>
-        Track 5 is my favorite coffee shop in New Jersey
-      </p>
-    </div>
+    <script>
+      let track5Toggle;
+      track5Toggle = false
+      let readMoreTrack5 = document.body.querySelector('#read-more-track5')
+      let track5Shoptile = document.body.querySelector('#track5-shoptile')
+      readMoreTrack5.addEventListener('click', () => {
+        track5Toggle ? track5Toggle = false : track5Toggle = true
+        console.log(track5Toggle)
+        if(track5Toggle === true) {
+          track5Shoptile.innerHTML = `
+            <h3>Track 5</h3>
+            <p>
+              Track 5 is my favorite coffee shop in New Jersey
+            </p>
+          `
+        } else if (track5Toggle === false) {
+          track5Shoptile.innerHTML = `
+            <h3>Track 5</h3>
+            <p>
+              Track 5 is my favorite coffee shop in New Jerseyaefaefa
+              Jerseyaefaefaaefaefaefaefaefaefaef
+              aefaefaefaeff
+            </p>
+          `
+        }
+      })
+    </script>
   </body>
 </html>
