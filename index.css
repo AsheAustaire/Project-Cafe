@@ -5,7 +5,7 @@ body {
 
 /* CLASSES */
 .shoptile-min {
-  background-image: url("./assets/cafe.jpg") ;
+  background-image: url("assets/cafe.jpg") ;
   height: 300px;
   margin-bottom: 30px;
   text-align: center;
