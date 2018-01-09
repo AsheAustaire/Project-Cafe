@@ -4,15 +4,98 @@
     <link rel='stylesheet' type='text/css' href='./index.css'/>
   </head>
   <body>
+    <!-- LOGO -->
     <div id='logo-box'>
       <img id='logo' src="assets/logo.png" />
     </div>
-    <div class='cityPanel'>
-      <div id='newYorkTile' class='cityTile'>
+    <!-- MAIN CONTAINER -->
+    <div id='main-container'>
+      <!-- FIRST PANEL -->
+      <div class='city-panel'>
+          <div id='new-york-tile' class='city-tile'>
+          </div>
+          <div id='new-jersey-tile' class='city-tile'>
+          </div>
       </div>
-      <div id='newJerseyTile' class='cityTile'>
+      <!-- SECOND PANEL -->
+      <div class='city-panel'>
+          <div id='new-york-tile' class='city-tile'>
+          </div>
+          <div id='new-jersey-tile' class='city-tile'>
+          </div>
       </div>
-    </div>
+      <!-- NJ PANEL -->
+      <div id='new-jersey-shops'>
+        <div id='track5-shoptile'>
+          <div class='shoptile-min'>
+            <h3>Track 5</h3>
+            <p>
+              Track 5 is my favorite coffee shop in New Jersey
+            </p>
+          </div>
+        </div>
+        <button class ='readmore'id='read-more-track5'>read more</button>
+        <div class='shoptile-min'>
+          <h3>Van Goghs Ear</h3>
+          <p>
+            Track 5 is my favorite coffee shop in New Jersey
+          </p>
+          <button value=>read more</button>
+        </div>
+        <div class='shoptile-min'>
+          <h3>Cai's Cafe</h3>
+          <p>
+            Track 5 is my favorite coffee shop in New Jersey
+          </p>
+          <button value=>read more</button>
+        </div>
+      </div>
+      <!-- NY PANEL -->
+      <div id='new-york-shops'>
+        <div id='whynot-shop'>
+          <div class='shoptile-min'>
+            <h3>WhyNot</h3>
+            <p>
+              Track 5 is my favorite coffee shop in New Jersey
+            </p>
+          </div>
+        </div>
+        <button class ='readmore'id='read-more-track5'>read more</button>
+        <div class='shoptile-min'>
+          <h3>Van Goghs Ear</h3>
+          <p>
+            Track 5 is my favorite coffee shop in New Jersey
+          </p>
+          <button value=>read more</button>
+        </div>
+        <div class='shoptile-min'>
+          <h3>Cai's Cafe</h3>
+          <p>
+            Track 5 is my favorite coffee shop in New Jersey
+          </p>
+          <button value=>read more</button>
+        </div>
+      </div>
+      <!-- JAVASCRIPT -->
+      <!-- JAVASCRIPT -->
+      <!-- JAVASCRIPT -->
+      <!-- JAVASCRIPT -->
+      <!-- JAVASCRIPT -->
+    <script>
+    // City Tiles
+      mainContainer = document.body.querySelector('#main-container');
+      newYorkTile = document.body.querySelector('#new-york-tile')
+      newJerseyTile = document.body.querySelector('#new-jersey-tile')
+      newJerseyShops = document.body.querySelector('#new-jersey-shops').innerHTML
+      newYorkShops = document.body.querySelector('#new-york-shops').innerHTML
+    // Event Handlers
+      newYorkTile.addEventListener('click', () => {
+        mainContainer.innerHTML = newYorkShops
+      })
+      newJerseyTile.addEventListener('click', () => {
+        mainContainer.innerHTML = newJerseyShops
+      })
+    </script>
   </body>
 </html>
 
@@ -20,29 +103,7 @@
 
 
 
-<!-- <div id='track5-shoptile'>
-  <div class='shoptile-min'>
-    <h3>Track 5</h3>
-    <p>
-      Track 5 is my favorite coffee shop in New Jersey
-    </p>
-  </div>
-</div>
-<button class ='readmore'id='read-more-track5'>read more</button>
-<div class='shoptile-min'>
-  <h3>Van Goghs Ear</h3>
-  <p>
-    Track 5 is my favorite coffee shop in New Jersey
-  </p>
-  <button value=>read more</button>
-</div>
-<div class='shoptile-min'>
-  <h3>Cai's Cafe</h3>
-  <p>
-    Track 5 is my favorite coffee shop in New Jersey
-  </p>
-  <button value=>read more</button>
-</div> -->
+
 <!-- TRACK 5 READMORE -->
 <!-- <script>
   let track5Toggle;

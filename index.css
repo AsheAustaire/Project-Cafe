@@ -1,23 +1,27 @@
 /* ----------- ELEMENTS ----------- */
 body {
   background-color: beige;
-  margin-bottom: 500px;
+  margin-bottom: 0px;
 }
 
 /* ----------- CLASSES ----------- */
 
-.cityPanel {
+.city-panel {
   display: flex;
-  height: 300px; /* Or whatever */
+  flex-wrap: wrap;
+  height: auto;
+  margin: 80px;
 }
 
-.cityTile {
+.city-tile {
   height: 500px;
   width: 500px;
   border-style: solid;
   border-width: 5px;
   display: block;
   margin: auto;
+  margin-bottom: 70px;
+
 }
 
 .shoptile-min {
@@ -48,12 +52,19 @@ body {
 }
 
 /* ----------- ID'S ----------- */
-#newYorkTile {
+
+#main-container {
+  border-style: solid;
+  border-width: 5px;
+}
+
+#new-york-tile {
   background-image: url('assets/locations/newyork.jpg');
   background-position: center;
 }
 
-#newJerseyTile {
+
+#new-jersey-tile {
   background-image: url('assets/locations/newjersey.jpg');
   background-position: center;
 }
