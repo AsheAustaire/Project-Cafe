@@ -9,6 +9,7 @@
       <img id='logo' src="assets/logo.png" />
     </div>
     <!-- MAIN CONTAINER -->
+    <button id='cities-button'>Check Out Cities</button>
     <div id='main-container'>
       <!-- FIRST PANEL -->
       <div class='city-panel'>
@@ -19,13 +20,13 @@
       </div>
       <!-- SECOND PANEL -->
       <div class='city-panel'>
-          <div id='new-york-tile' class='city-tile'>
+          <div id='boston-tile' class='city-tile'>
           </div>
-          <div id='new-jersey-tile' class='city-tile'>
+          <div id='philly-tile' class='city-tile'>
           </div>
       </div>
       <!-- NJ PANEL -->
-      <div id='new-jersey-shops'>
+      <div id='new-jersey-shops' >
         <div id='track5-shoptile'>
           <div class='shoptile-min'>
             <h3>Track 5</h3>
@@ -51,7 +52,7 @@
         </div>
       </div>
       <!-- NY PANEL -->
-      <div id='new-york-shops'>
+      <div id='new-york-shops' >
         <div id='whynot-shop'>
           <div class='shoptile-min'>
             <h3>WhyNot</h3>
@@ -76,6 +77,12 @@
           <button value=>read more</button>
         </div>
       </div>
+      <!-- BOSTON PANEL -->
+      <div id='boston-shops' >
+      </div>
+      <!-- PHILLY PANEL -->
+      <div id='philly-shops' >
+      </div>
       <!-- JAVASCRIPT -->
       <!-- JAVASCRIPT -->
       <!-- JAVASCRIPT -->
@@ -84,17 +91,41 @@
     <script>
     // City Tiles
       mainContainer = document.body.querySelector('#main-container');
-      newYorkTile = document.body.querySelector('#new-york-tile')
-      newJerseyTile = document.body.querySelector('#new-jersey-tile')
-      newJerseyShops = document.body.querySelector('#new-jersey-shops').innerHTML
-      newYorkShops = document.body.querySelector('#new-york-shops').innerHTML
+      newYorkTile = document.body.querySelector('#new-york-tile');
+      newJerseyTile = document.body.querySelector('#new-jersey-tile');
+      newJerseyShops = document.body.querySelector('#new-jersey-shops').innerHTML;
+      newYorkShops = document.body.querySelector('#new-york-shops').innerHTML;
+      citiesList = document.body.querySelector('#main-container').innerHTML;
+      citiesButton = document.querySelector('#cities-button');
+      bostonTile = document.body.querySelector('#boston-tile');
+      phillyTile = document.body.querySelector('#philly-tile');
+      bostonShops = document.body.querySelector('#boston-tile').innerHTML;
+      phillyShops = document.body.querySelector('#philly-tile').innerHTML;
     // Event Handlers
+      function createCityEvents() {
+      newYorkTile = document.body.querySelector('#new-york-tile');
+      newJerseyTile = document.body.querySelector('#new-jersey-tile');
+      bostonTile = document.body.querySelector('#boston-tile');
+      phillyTile = document.body.querySelector('#philly-tile');
+
       newYorkTile.addEventListener('click', () => {
         mainContainer.innerHTML = newYorkShops
       })
       newJerseyTile.addEventListener('click', () => {
         mainContainer.innerHTML = newJerseyShops
       })
+      bostonTile.addEventListener('click', () => {
+        mainContainer.innerHTML = bostonShops
+      })
+      phillyTile.addEventListener('click', () => {
+        mainContainer.innerHTML = phillyShops
+      })
+    }
+      citiesButton.addEventListener('click', () => {
+        mainContainer.innerHTML = citiesList
+        createCityEvents()
+      })
+      createCityEvents()
     </script>
   </body>
 </html>

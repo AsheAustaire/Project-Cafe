@@ -58,6 +58,22 @@ body {
   border-width: 5px;
 }
 
+#new-jersey-shops {
+display: none;
+}
+
+#new-york-shops {
+display: none;
+}
+
+#boston-shops {
+display: none;
+}
+
+#philly-shops {
+display: none;
+}
+
 #new-york-tile {
   background-image: url('assets/locations/newyork.jpg');
   background-position: center;
@@ -69,6 +85,16 @@ body {
   background-position: center;
 }
 
+#boston-tile {
+  background-image: url('assets/locations/boston.jpg');
+  background-position: center;
+}
+
+#philly-tile {
+  background-image: url('assets/locations/philly.jpg');
+  background-position: top;
+}
+
 #logo-box {
   text-align: center;
   margin: 100px;
@@ -76,4 +102,9 @@ body {
 
 #logo {
   height: 300px
+}
+
+#cities-button {
+  height: 100px;
+  weight: 100px;
 }
