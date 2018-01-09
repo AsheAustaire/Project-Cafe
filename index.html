@@ -7,60 +7,71 @@
     <div id='logo-box'>
       <img id='logo' src="assets/logo.png" />
     </div>
-    <div id='track5-shoptile'>
+    <div class='cityPanel'>
+      <div id='newYorkTile' class='cityTile'>
+      </div>
+      <div id='newJerseyTile' class='cityTile'>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+<!-- <div id='track5-shoptile'>
+  <div class='shoptile-min'>
+    <h3>Track 5</h3>
+    <p>
+      Track 5 is my favorite coffee shop in New Jersey
+    </p>
+  </div>
+</div>
+<button class ='readmore'id='read-more-track5'>read more</button>
+<div class='shoptile-min'>
+  <h3>Van Goghs Ear</h3>
+  <p>
+    Track 5 is my favorite coffee shop in New Jersey
+  </p>
+  <button value=>read more</button>
+</div>
+<div class='shoptile-min'>
+  <h3>Cai's Cafe</h3>
+  <p>
+    Track 5 is my favorite coffee shop in New Jersey
+  </p>
+  <button value=>read more</button>
+</div> -->
+<!-- TRACK 5 READMORE -->
+<!-- <script>
+  let track5Toggle;
+  track5Toggle = false
+  let readMoreTrack5 = document.body.querySelector('#read-more-track5')
+  let track5Shoptile = document.body.querySelector('#track5-shoptile')
+  readMoreTrack5.addEventListener('click', () => {
+    track5Toggle ? track5Toggle = false : track5Toggle = true
+    console.log(track5Toggle)
+    if(track5Toggle === true) {
+      track5Shoptile.innerHTML = `
+      <div class='shoptile-max'>
+        <h3>Track 5</h3>
+        <p>
+        Track 5 is my favorite coffee shop in New Jerseyaefaefa
+        Jerseyaefaefaaefaefaefaefaefaefaef
+        aefaefaefaeff
+        </p>
+      </div>
+      `
+    } else if (track5Toggle === false) {
+      track5Shoptile.innerHTML = `
       <div class='shoptile-min'>
         <h3>Track 5</h3>
         <p>
-          Track 5 is my favorite coffee shop in New Jersey
+          Track 5 is my favorite coffee shop
         </p>
       </div>
-    </div>
-    <button class ='readmore'id='read-more-track5'>read more</button>
-    <div class='shoptile-min'>
-      <h3>Van Goghs Ear</h3>
-      <p>
-        Track 5 is my favorite coffee shop in New Jersey
-      </p>
-      <button value=>read more</button>
-    </div>
-    <div class='shoptile-min'>
-      <h3>Cai's Cafe</h3>
-      <p>
-        Track 5 is my favorite coffee shop in New Jersey
-      </p>
-      <button value=>read more</button>
-    </div>
-    <!-- TRACK 5 READMORE -->
-    <script>
-      let track5Toggle;
-      track5Toggle = false
-      let readMoreTrack5 = document.body.querySelector('#read-more-track5')
-      let track5Shoptile = document.body.querySelector('#track5-shoptile')
-      readMoreTrack5.addEventListener('click', () => {
-        track5Toggle ? track5Toggle = false : track5Toggle = true
-        console.log(track5Toggle)
-        if(track5Toggle === true) {
-          track5Shoptile.innerHTML = `
-          <div class='shoptile-max'>
-            <h3>Track 5</h3>
-            <p>
-            Track 5 is my favorite coffee shop in New Jerseyaefaefa
-            Jerseyaefaefaaefaefaefaefaefaefaef
-            aefaefaefaeff
-            </p>
-          </div>
-          `
-        } else if (track5Toggle === false) {
-          track5Shoptile.innerHTML = `
-          <div class='shoptile-min'>
-            <h3>Track 5</h3>
-            <p>
-              Track 5 is my favorite coffee shop
-            </p>
-          </div>
-          `
-        }
-      })
-    </script>
-  </body>
-</html>
+      `
+    }
+  })
+</script> -->

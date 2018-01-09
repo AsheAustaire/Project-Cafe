@@ -1,11 +1,28 @@
-/* ELEMENTS */
+/* ----------- ELEMENTS ----------- */
 body {
   background-color: beige;
+  margin-bottom: 500px;
 }
 
-/* CLASSES */
+/* ----------- CLASSES ----------- */
+
+.cityPanel {
+  display: flex;
+  height: 300px; /* Or whatever */
+}
+
+.cityTile {
+  height: 500px;
+  width: 500px;
+  border-style: solid;
+  border-width: 5px;
+  display: block;
+  margin: auto;
+}
+
 .shoptile-min {
   background-image: url("assets/cafe.jpg") ;
+  opacity: 20%;
   height: 300px;
   margin-bottom: 30px;
   text-align: center;
@@ -30,7 +47,17 @@ body {
   margin-bottom: 50px;
 }
 
-/* ID'S */
+/* ----------- ID'S ----------- */
+#newYorkTile {
+  background-image: url('assets/locations/newyork.jpg');
+  background-position: center;
+}
+
+#newJerseyTile {
+  background-image: url('assets/locations/newjersey.jpg');
+  background-position: center;
+}
+
 #logo-box {
   text-align: center;
   margin: 100px;
