@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+
+/* NAVBAR
+=============<*/
+
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -80px;
+}
+
+nav > .button {
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+  font: 700 20px Ubuntu;
+  color: white;
+  outline: none;
+}
+
+
+.button.one {
+  background: hsl(0,0%,0%);
+}
+
+.button.one:hover {
+  background: hsl(0,0%,30%);
+}
+
+.button.one:active {
+  border: solid 1px gray;
+  background: hsl(0, 0%, 50% )
+}
+
+
+/* MISC
+=============<*/
+
+.main-logo {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  background: url(../img/coffee-gif.gif);
+  background-position: center;
+  position: relative;
+  z-index: -2;
+}
+
+.plant-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -500px;
+  z-index: -1;
+}
+
+.plant-img {
+  width: 400px;
+  height: 400px;
+  min-width: 200px;
+  background: url(../img/plant.png) center no-repeat;
+  margin: 200px;
+
+}

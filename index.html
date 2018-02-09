@@ -1,169 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' type='text/css' href='./index.css'/>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel='stylesheet' href='res/css/style.css'/>
   </head>
   <body>
-    <!-- LOGO -->
-    <div id='logo-box'>
-      <img id='logo' src="assets/logo.png" />
-    </div>
-    <!-- MAIN CONTAINER -->
-    <button id='cities-button'>Check Out Cities</button>
-    <div id='main-container'>
-      <!-- FIRST PANEL -->
-      <div class='city-panel'>
-          <div id='new-york-tile' class='city-tile'>
-          </div>
-          <div id='new-jersey-tile' class='city-tile'>
-          </div>
+    <main>
+      <div class='main-logo'></div>
+      <nav>
+        <button id='button-shops' class='button one' type='button' name='button'>THE SHOPS</button>
+        <!-- <button class='button 2' type='button' name='button'>TEST</button>
+        <button class='button 3' type='button' name='button'>TEST</button>
+        <button class='button 4' type='button' name='button'>TEST</button>
+        <button class='button 5' type='button' name='button'>TEST</button>
+        <button class='button 5' type='button' name='button'>TEST</button> -->
+      </nav>
+      <div class='plant-wrapper'>
+        <div class='plant-img left'></div>
+        <div class='plant-img right'></div>
       </div>
-      <!-- SECOND PANEL -->
-      <div class='city-panel'>
-          <div id='boston-tile' class='city-tile'>
-          </div>
-          <div id='philly-tile' class='city-tile'>
-          </div>
-      </div>
-      <!-- NJ PANEL -->
-      <div id='new-jersey-shops' >
-        <div id='track5-shoptile'>
-          <div class='shoptile-min'>
-            <h3>Track 5</h3>
-            <p>
-              Track 5 is my favorite coffee shop in New Jersey
-            </p>
-          </div>
-        </div>
-        <button class ='readmore'id='read-more-track5'>read more</button>
-        <div class='shoptile-min'>
-          <h3>Van Goghs Ear</h3>
-          <p>
-            Track 5 is my favorite coffee shop in New Jersey
-          </p>
-          <button value=>read more</button>
-        </div>
-        <div class='shoptile-min'>
-          <h3>Cai's Cafe</h3>
-          <p>
-            Track 5 is my favorite coffee shop in New Jersey
-          </p>
-          <button value=>read more</button>
-        </div>
-      </div>
-      <!-- NY PANEL -->
-      <div id='new-york-shops' >
-        <div id='whynot-shop'>
-          <div class='shoptile-min'>
-            <h3>WhyNot</h3>
-            <p>
-              Track 5 is my favorite coffee shop in New Jersey
-            </p>
-          </div>
-        </div>
-        <button class ='readmore'id='read-more-track5'>read more</button>
-        <div class='shoptile-min'>
-          <h3>Van Goghs Ear</h3>
-          <p>
-            Track 5 is my favorite coffee shop in New Jersey
-          </p>
-          <button value=>read more</button>
-        </div>
-        <div class='shoptile-min'>
-          <h3>Cai's Cafe</h3>
-          <p>
-            Track 5 is my favorite coffee shop in New Jersey
-          </p>
-          <button value=>read more</button>
-        </div>
-      </div>
-      <!-- BOSTON PANEL -->
-      <div id='boston-shops' >
-      </div>
-      <!-- PHILLY PANEL -->
-      <div id='philly-shops' >
-      </div>
-      <!-- JAVASCRIPT -->
-      <!-- JAVASCRIPT -->
-      <!-- JAVASCRIPT -->
-      <!-- JAVASCRIPT -->
-      <!-- JAVASCRIPT -->
-    <script>
-    // City Tiles
-      mainContainer = document.body.querySelector('#main-container');
-      newYorkTile = document.body.querySelector('#new-york-tile');
-      newJerseyTile = document.body.querySelector('#new-jersey-tile');
-      newJerseyShops = document.body.querySelector('#new-jersey-shops').innerHTML;
-      newYorkShops = document.body.querySelector('#new-york-shops').innerHTML;
-      citiesList = document.body.querySelector('#main-container').innerHTML;
-      citiesButton = document.querySelector('#cities-button');
-      bostonTile = document.body.querySelector('#boston-tile');
-      phillyTile = document.body.querySelector('#philly-tile');
-      bostonShops = document.body.querySelector('#boston-tile').innerHTML;
-      phillyShops = document.body.querySelector('#philly-tile').innerHTML;
-    // Event Handlers
-      function createCityEvents() {
-      newYorkTile = document.body.querySelector('#new-york-tile');
-      newJerseyTile = document.body.querySelector('#new-jersey-tile');
-      bostonTile = document.body.querySelector('#boston-tile');
-      phillyTile = document.body.querySelector('#philly-tile');
-
-      newYorkTile.addEventListener('click', () => {
-        mainContainer.innerHTML = newYorkShops
-      })
-      newJerseyTile.addEventListener('click', () => {
-        mainContainer.innerHTML = newJerseyShops
-      })
-      bostonTile.addEventListener('click', () => {
-        mainContainer.innerHTML = bostonShops
-      })
-      phillyTile.addEventListener('click', () => {
-        mainContainer.innerHTML = phillyShops
-      })
-    }
-      citiesButton.addEventListener('click', () => {
-        mainContainer.innerHTML = citiesList
-        createCityEvents()
-      })
-      createCityEvents()
-    </script>
+    </main>
+    <script src='res/js/index.js'></script>
   </body>
 </html>
-
-
-
-
-
-
-<!-- TRACK 5 READMORE -->
-<!-- <script>
-  let track5Toggle;
-  track5Toggle = false
-  let readMoreTrack5 = document.body.querySelector('#read-more-track5')
-  let track5Shoptile = document.body.querySelector('#track5-shoptile')
-  readMoreTrack5.addEventListener('click', () => {
-    track5Toggle ? track5Toggle = false : track5Toggle = true
-    console.log(track5Toggle)
-    if(track5Toggle === true) {
-      track5Shoptile.innerHTML = `
-      <div class='shoptile-max'>
-        <h3>Track 5</h3>
-        <p>
-        Track 5 is my favorite coffee shop in New Jerseyaefaefa
-        Jerseyaefaefaaefaefaefaefaefaefaef
-        aefaefaefaeff
-        </p>
-      </div>
-      `
-    } else if (track5Toggle === false) {
-      track5Shoptile.innerHTML = `
-      <div class='shoptile-min'>
-        <h3>Track 5</h3>
-        <p>
-          Track 5 is my favorite coffee shop
-        </p>
-      </div>
-      `
-    }
-  })
-</script> -->
